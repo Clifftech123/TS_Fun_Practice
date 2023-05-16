@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec ts-node Solutions/ index.ts"
+    "test": "jest --watch",
+    "start": "nodemon --watch 'Solutions/**/*.ts' --exec 'ts-node' Solutions/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,14 @@
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0"
+  },
+  
+  "jest": {
+    "preset": "ts-jest"
   }
 }
