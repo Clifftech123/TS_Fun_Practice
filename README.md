@@ -21,7 +21,7 @@ you can find the code in the solutions folder. And all the test in the test fold
 
 ##   Solutions   Exercises  
 
-- **  1.    Write a function identity that takes an argument and returns that argument
+1.    Write a function identity that takes an argument and returns that argument
 
 ```typescript
 export const identity = (arg: any) => {
@@ -34,7 +34,7 @@ const dentity_result = identity(3);
 
 ```
 
--   2. Write a binary function addb that takes two 
+2.  Write a binary function addb that takes two 
 numbers and returns their sum
 
 ```typescript
