@@ -1,23 +1,10 @@
 # Typescript Function practice
 
+Welcome to a collection of small and enjoyable functional programming exercises in TypeScript. This repository draws inspiration from JS-fun-Practice, created by the amazing community at Zero to Mastery. Check them out at Zero to Mastery!
 
-A list of small & fun functional programming exercises in  typescript . This repo was inspired by [JS-fun-Practice](https://github.com/zero-to-mastery/JS_Fun_Practice)  
+While Zero to Mastery's JS-fun-Practice focused on JavaScript, I've taken up the challenge of reimplementing those exercises in TypeScript. As a result, this repository is entirely TypeScript-based.
 
-Zero to mastery is a great community of developers, check them out! here [zero-to-mastery](https://github.com/zero-to-mastery)
-
-
-
-Zero to mastery JUS-fun-Practice  was javascript based, I decided to do the same exercises in typescript . So This repo is typescript based.
-
-
-Below are the exercises, I will be adding more as I go along. Feel free to contribute and add more exercises.
-
-You can find the solutions in the solutions folder.
-You also find  the exercises  here 
-
-The is  the markdown file for the exercises.
-you can find the code in the solutions folder. And all the test in the test folder.
-
+Below, you'll find the exercises I've completed so far, and I'll continue to add more over time.
 
 ##   Solutions   Exercises  
 
