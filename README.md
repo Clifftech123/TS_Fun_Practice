@@ -1,6 +1,6 @@
 # Typescript Function practice
 
-Welcome to a collection of small and enjoyable functional programming exercises in TypeScript. This repository draws inspiration from JS-fun-Practice, created by the amazing community at Zero to Mastery. Check them out at [Zero to Mastery!] (https://zerotomastery.io/).
+Welcome to a collection of small and enjoyable functional programming exercises in TypeScript. This repository draws inspiration from JS-fun-Practice, created by the amazing community at Zero to Mastery. Check them out at [Zero to Mastery!](https://zerotomastery.io/).
 
 While Zero to Mastery's [JS-fun-Practice ](https://github.com/zero-to-mastery/JS_Fun_Practice) focused on JavaScript, I've taken up the challenge of reimplementing those exercises in TypeScript. As a result, this repository is entirely TypeScript-based.
 
@@ -61,3 +61,81 @@ const minb = (num1: number, num2: number) => {
 const minb_Result = minb(3, 4);
 console.log(minb_Result); // output: 3
 ```
+
+6. Write a function maxb that takes two numbers and returns the larger one.
+
+```typescript
+const maxb = (num1: number, num2: number) => {
+  return Math.max(num1, num2);
+};
+const maxb_Result = maxb(3, 4);
+console.log(maxb_Result); // output: 4`
+
+```
+
+7. Write a function add that is generalized for any amount of arguments
+
+```typescript
+ const add = (...args: number[]) => {
+  return args.reduce((acc, curr) => acc + curr, 0);
+};
+
+const add_Result = add(1, 2, 4);
+console.log(add_Result); // output: 7
+
+```
+
+8. Write a function sub that is generalized for any amount of arguments
+
+```typescript
+ const sub = (...args: number[]) => {
+  return args.reduce((acc, curr) => acc - curr);
+};
+
+const sub_Result = sub(1, 2, 4);
+console.log(sub_Result); // output: -5
+
+```
+
+
+9. Write a function mul that is generalized for any amount of arguments
+
+```typescript
+
+const mul = (...args: number[]) => {
+  return args.reduce((acc, curr) => acc * curr);
+};
+
+const mul_Result = mul(1, 2, 4);
+console.log(mul_Result); // output: 8
+
+```
+
+10. Write a function min that is generalized for any amount of arguments
+
+```typescript
+
+
+const min = (...args: number[]) => {
+  return args.reduce((acc, curr) => Math.min(acc, curr));
+};
+
+const min_Result = min(1, 2, 4);
+console.log(min_Result); // output: 1
+
+```
+
+11. Write a function max that is generalized for any amount of arguments
+
+```typescript
+
+const max = (...args: number[]) => {
+  return args.reduce((acc, curr) => Math.max(acc, curr));
+};
+
+const max_Result = max(1, 2, 4);
+console.log(max_Result); // output: 4
+
+```
+
+
