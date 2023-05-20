@@ -1,3 +1,4 @@
+//1.  Write a function identity that ta
 //1.  Write a function identity that takes an argument and returns that argument
 export const identity = (arg: any) => {
   return arg;
@@ -134,11 +135,7 @@ export const maxRecurse = (...nums: number[]): number => {
   }
 };
 
-//  example usage
-const maxRecurse_Result = maxRecurse(1, 2, 4);
-console.log(maxRecurse_Result); // output: 4
 
-// 16. Write a function not that takes a function and returns the negation of its result
 
 export function not<T>(f: (x: T) => boolean): (x: T) => boolean {
   return (x: T) => !f(x);
@@ -166,6 +163,7 @@ const accumulator = acc(sum, 0);
 console.log(accumulator(1, 2)); // Output: 3
 console.log(accumulator(3, 4)); // Output: 7
 console.log(accumulator(5, 6)); // Output: 11
+
 
 
 
