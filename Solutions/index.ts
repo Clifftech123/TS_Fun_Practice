@@ -165,7 +165,32 @@ console.log(accumulator(3, 4)); // Output: 7
 console.log(accumulator(5, 6)); // Output: 11
 
 
+// 18 Write a function accPartial that takes in a function, a start index, and an end index, and returns a function that accumulates a subset of its arguments by applying the given function to all elements between start and end.
 
 
+export function accPartial<T, R>(
+  fn: AccumulatorFunction<T, R>,
+  start: number,
+  end: number
+): AccumulatorFunction<T, R> {
+  return (acc: R, val: T) => {
+    if (start <= end) {
+      return fn(acc, val);
+    }
+    return acc;
+  };
+}
+
+
+// Example usage
+
+const accumulator2 = accPartial(sum, 1, 3);
+console.log(accumulator2(1, 2)); // Output: 3
+console.log(accumulator2(3, 4)); // Output: 7
+console.log(accumulator2(5, 6)); // Output: 7
+
+
+
+// 19. Write a functi
 
 

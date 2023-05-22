@@ -16,6 +16,7 @@ import {
   maxRecurse,
   acc,
   not,
+  accPartial,
 
 } from "../Solutions/index";
 
@@ -130,3 +131,15 @@ test("takes a function and an initial value and returns a function that runs the
   const addAcc = acc(add, 0);
   expect(addAcc(3, 4)).toBe(7);
 })
+
+
+// 18. Write a function accPartial that takes in a function, a start index, and an end index, and returns a function that accumulates a subset of its arguments by applying the given function to all elements between start and end.
+
+
+
+test("takes in a function, a start index, and an end index, and returns a function that accumulates a subset of its arguments by applying the given function to all elements between start and end", () => {
+  const add = (a: number, b: number) => a + b;
+  const addAcc = accPartial(add, 1, 3);
+  expect(addAcc(1, 2, )).toBe(3);
+})
+
